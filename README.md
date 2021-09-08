@@ -1,5 +1,7 @@
 # React Hooks - useRef
 
+El **useRef** Hook nos permitirá interactuar directamente con del DOM y disponer de referencias mutables.
+
 ```
 const refContainer = useRef(initialValue);
 ```

@@ -1,6 +1,7 @@
 // import CopyApp from './CopyApp';
 // import MediaPlayer from './MediaPlayer';
-import RenderApp from './RenderApp';
+import LoadingApp from './LoadingApp';
+// import RenderApp from './RenderApp';
 // import ScrollAnimation from './ScrollAnimation';
 // import FocusApp from './FocusApp';
 
@@ -11,7 +12,8 @@ function App() {
       {/* <CopyApp /> */}
       {/* <MediaPlayer /> */}
       {/* <ScrollAnimation /> */}
-      <RenderApp />
+      {/* <RenderApp /> */}
+      <LoadingApp />
     </>
   );
 }

@@ -4,7 +4,7 @@ Los _hooks_ son una nueva incorporación a partir de **React 16.8.0**, que nos p
 
 <hr />
 
-#### Estado
+## Estado
 
 El estado (***state***) son los valores internos que manejan la lógica y los datos de un componente, permite que éste reaccione a cualquier cambio lo que hará que se vuelva a renderizar en la interfaz.
 
@@ -34,5 +34,35 @@ Cada vez que cambia el ***state***, React vuelve a renderizar el componente en l
 
 
 
-#### Ciclo de Vida
+## Ciclo de Vida
+
+Son métodos que se ejecutan automáticamente en un **Componente de Clase**, ocurren en 3 fases:
+
+1. Montaje.
+2. Actualización.
+3. Desmontaje.
+
+<details><summary>Leer más</summary>
+
+### Montaje
+Estos métodos se ejecutan cuando se **crea** un componente y se **inserta** en el árbol del DOM.
+- **constructor()**: Se ejecuta al crear la instancia del componente, en el constructor puedes inicializar el estado y enlazar manejadores de eventos.
+
+- **render()**: Es el único método requerido, cuando se ejecuta, examina el estado y las propiedades y **dibuja** el componente en el árbol del DOM.
+
+- **componentDidMount()**: Se invoca inmediatamente después de que un componente se ha **insertado** al árbol del DOM. Es útil para ejecutar suscripciones o peticiones asíncronas a API's, bases de datos, servicios, etc.
+
+### Actualización
+Estos métodos son ejecutados por cambios en el estado o las propiedades de los componentes.
+- **render()**: redibuja el componente cuando detecta cambios en el estado o las propiedades del componente.
+
+- **componenteDidUpdate()**: Se ejecuta inmediatamente después de que la actualización del estado o las propiedades sucede, al igual que *componentDidMount* es un método ideal para hacer peticiones externas.
+
+### Desmontaje
+
+Estos métodos son ejecutados una vez que el componente ha sido eliminado del árbol del DOM.
+
+- **componenteWillUnmount():** Se ejecuta antes de destruir el componente del árbol del DOM, es un método útil para hacer tareas de limpieza.  
+
+  </details>
 

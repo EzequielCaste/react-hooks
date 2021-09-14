@@ -54,7 +54,7 @@ const types = {
 
 
 
-#### ¿Qué es un Reducer?
+### ¿Qué es un Reducer?
 
 **Reducer**: son funciones que toman el estado actual `state` y una `action` como argumentos y devuelven un nuevo `state`. `(state, action) => newState`
 
@@ -67,7 +67,7 @@ Los **reducers** son **funciones puras**:
 
 **Nota:** un "efecto secundario" es cualquier cambio al `state` o comportamiento que puede ser visto fuera de devolver un valor desde la función. Por ejemplo: mostrar un valor por consola, guardar un archivo, realizar una petición AJAX HTTP, entre otros. 
 
-#### Actualizaciones Inmutables
+### Actualizaciones Inmutables
 
 **Mutación**: modificar valores existentes de un objeto/arreglo.
 
@@ -83,14 +83,14 @@ return {
 }
 ```
 
-#### Reducer Puro
+### Reducer Puro
 
 - Retornará el mismo estado, si se dispara la misma acción con el mismo payload.
 - Los parámetros de entrada (state, action) no deben ser mutados, (alterado). Debes utilizar funciones que no modifiquen el valor original sino que retornen uno nuevo, como **filter**, **find**, **map** y **reduce**.
 
 
 
-#### Parametro Init 
+### Parametro Init 
 
 ```react
 const initialState = 10.25;
@@ -117,7 +117,7 @@ const reducer = (state, action) => {
 
 
 
-#### ¿Cuando usar useReducer?
+### ¿Cuando usar useReducer?
 
 - Cuando se tiene una lógica compleja que involucra subvalores.
 - Cuando el próximo estado depende del anterior.

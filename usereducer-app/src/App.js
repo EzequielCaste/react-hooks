@@ -5,9 +5,9 @@ import TodoApp from "./TodoApp";
 function App() {
   return (
     <>
-      {/* <CounterApp /> */}
+      <CounterApp />
       {/* <TodoApp /> */}
-      <ProductApp />
+      {/* <ProductApp /> */}
     </>
   );
 }

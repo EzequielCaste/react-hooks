@@ -24,7 +24,7 @@ const reducer = (state, action) => {
 }
 ```
 
-El **dispatch** recibe una acción. Una acción es un objeto que tiene una propiedad `type`. Se podría pensar que una acción como un *evento* que describe algo que sucedió en la aplicación.
+El **dispatch** recibe una acción. Una acción es un objeto que tiene una propiedad `type`. Se podría pensar que una acción es como un *evento* que describe algo que sucedió en la aplicación.
 
 `{ type: 'increment', payload: '1'}`
 
@@ -60,7 +60,7 @@ const types = {
 
 Los **reducers** son **funciones puras**:
 
-- Son aquellas que operan utilizando solo los parámetros de entrara `state` y `action` sin recurrir o afectar a ningún otro elemento fuera de ellas.
+- Son aquellas que operan utilizando solo los parámetros de entrada `state` y `action` sin recurrir o afectar a ningún otro elemento fuera de ellas.
 - Debe cumplir estas dos condiciones:
   - Dado unos parámetros de entrada de idéntico valor, la función siempre devolverá el mismo resultado.
   - El cómputo de la función, su lógica, no implica ningún efecto secundario observable fuera de ella
